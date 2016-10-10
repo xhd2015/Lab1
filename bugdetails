@@ -1,4 +1,4 @@
-
+#i
 #issue 1
 	[ bug ]
 	x*y+2x--->!simplify  y=-2--->get "0.0x"
