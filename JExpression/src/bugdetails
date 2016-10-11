@@ -1,0 +1,12 @@
+
+#issue 1
+	[ bug ]
+	x*y+2x--->!simplify  y=-2--->get "0.0x"
+						   	 --->should be  ""
+	
+	[ repaired ] 
+	[ how ]
+	repaired on addNode(...) , handling  with isItem=true and coeff=0 correctly , and recursively.
+	
+#issue 2
+	  

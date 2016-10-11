@@ -10,7 +10,6 @@ public class Exp {
 	
 	public static ArrayList<String> expression(String expin) throws ExpressionException
 	{
-		//这里可以使用另一个parseCommand方法,参见ExpressionNode的静态方法.
 		return ExpressionNode.parseCommand(expin);
 	}
 	public static void simpilfy(Expression e,HashMap<String,Double> table)
