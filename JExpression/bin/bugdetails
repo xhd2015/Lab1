@@ -9,4 +9,9 @@
 	repaired on addNode(...) , handling  with isItem=true and coeff=0 correctly , and recursively.
 	
 #issue 2
-	  
+	[ bug ]
+	2.7x*y --> got 7.0 x * y +2.0
+		--->should be 2.7 x * y
+	[ repaired ]
+	[ how ]
+	on Regular Expression construction,replace (\d+|\d*\.\d*) with (\d*\.?\d*)
