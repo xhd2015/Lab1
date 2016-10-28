@@ -1,0 +1,87 @@
+Found a 13 line (60 tokens) duplication in the following files: 
+Starting at line 548 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/ExpressionNode.java
+Starting at line 564 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/ExpressionNode.java
+
+		print(list.toString());
+
+		print(head.dumpTree(0));
+		list.clear();
+		head.parseAsList(list, "");
+		print(list);
+
+		print(head.dumpTree(0));
+		list.clear();
+		head.parseAsList(list, "");
+		print(list);
+
+		head.addNode(standardlizeExpression("9*t*z*y"));
+=====================================================================
+Found a 5 line (37 tokens) duplication in the following files: 
+Starting at line 56 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/Expression.java
+Starting at line 77 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/Expression.java
+
+		ArrayList<ExpressionNode> derived=new ArrayList<>();
+
+		for(int i=0;i<head.siblings.size();i++)
+		{
+			ExpressionNode son=head.siblings.get(i);
+=====================================================================
+Found a 8 line (34 tokens) duplication in the following files: 
+Starting at line 104 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/Expression.java
+Starting at line 487 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/ExpressionNode.java
+
+	public static void printe(String end,Object...o)
+	{
+		for(Object i:o)
+		{
+			System.out.print(i);
+			System.out.print(" ");
+		}
+		System.out.print(end);
+=====================================================================
+Found a 7 line (33 tokens) duplication in the following files: 
+Starting at line 64 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/Expression.java
+Starting at line 85 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/Expression.java
+
+		for(ExpressionNode en:derived)
+		{
+			if(en.isConst())
+			{
+				double coeff=constNode.getValueAsIsItem();
+				constNode.setCoefficient(coeff+en.getValueAsIsItem());
+			}else{
+=====================================================================
+Found a 6 line (28 tokens) duplication in the following files: 
+Starting at line 548 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/ExpressionNode.java
+Starting at line 564 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/ExpressionNode.java
+Starting at line 576 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/ExpressionNode.java
+
+		print(list.toString());
+
+		print(head.dumpTree(0));
+		list.clear();
+		head.parseAsList(list, "");
+		print(list);
+=====================================================================
+Found a 6 line (27 tokens) duplication in the following files: 
+Starting at line 548 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/ExpressionNode.java
+Starting at line 569 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/ExpressionNode.java
+
+		print(list.toString());
+
+		print(head.dumpTree(0));
+		list.clear();
+		head.parseAsList(list, "");
+		print(list);
+=====================================================================
+Found a 6 line (27 tokens) duplication in the following files: 
+Starting at line 553 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/ExpressionNode.java
+Starting at line 564 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/ExpressionNode.java
+Starting at line 576 of /home/x/temp/Lab1_1/Lab1/JExpression/src/fulton/byperiod/atuniversity/expression/ExpressionNode.java
+
+		print(list);
+
+		print(head.dumpTree(0));
+		list.clear();
+		head.parseAsList(list, "");
+		print(list);

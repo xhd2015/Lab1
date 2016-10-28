@@ -337,9 +337,9 @@ public class ExpressionNode {
 		// 排序各个项
 		additions.sort(new Comparator<String>() {
 
-			@Override
-			public int compare(String arg0, String arg1) {
-				// TODO Auto-generated method stub
+		@Override
+		public int compare(String arg0, String arg1) {
+			// TODO Auto-generated method stub
 				return arg0.compareTo(arg1);
 			}
 		});
@@ -420,7 +420,7 @@ public class ExpressionNode {
 		multiEx = multiEx.replaceAll("\n", "");
 
 		// 检查字符集,不能包含!,/等等
-		String invalidCharset = "[^A-Za-z0-9\\*\\-\\+\\^]";
+		String invalidCharset = "[^.A-Za-z0-9\\*\\-\\+\\^]";
 		Pattern p1 = Pattern.compile(invalidCharset);
 		Matcher p1m = p1.matcher(multiEx);
 		if (p1m.find()) {
@@ -471,7 +471,7 @@ public class ExpressionNode {
 
 		// 开始分割单个的项
 		ArrayList<String> exList = new ArrayList<>();
-		String singleItem = "([+-]?(?:\\d*|\\d*\\.\\d*))(?:([A-Za-z]*\\^\\d+)|([A-Za-z]*))?";
+		String singleItem = "([+-]?(?:\\d*\\.?\\d*))(?:([A-Za-z]*\\^\\d+)|([A-Za-z]*))?";
 		String multiItemP = singleItem + "(?:\\*" + singleItem + ")*";
 		Pattern sp = Pattern.compile(multiItemP);
 		Matcher spm = sp.matcher(multiEx);
