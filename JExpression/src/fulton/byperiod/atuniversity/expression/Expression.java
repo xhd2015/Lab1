@@ -53,7 +53,7 @@ public class Expression {
 	public void derive_ex(String variable)
 	{
 		constNode.setCoefficient(0);//常数项归0
-		ArrayList<ExpressionNode> derived=new ArrayList<>();
+		ArrayList<ExpressionNode> derived=new ArrayList<>();  
 
 		for(int i=0;i<head.siblings.size();i++)
 		{
