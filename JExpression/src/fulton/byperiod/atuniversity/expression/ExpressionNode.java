@@ -8,11 +8,11 @@ import java.util.regex.Pattern;
 
 public class ExpressionNode {
 
-	public String val = "";
-	public String coeff = "0";
-	public String sign = "+";
-	public boolean isItem = false;
-	public ArrayList<ExpressionNode> siblings = null;
+	protected String val = "";
+	protected String coeff = "0";
+	protected String sign = "+";
+	protected boolean isItem = false;
+	protected ArrayList<ExpressionNode> siblings = null;
 	public static double zeroRange = 0.0000000001;
 
 	// @val default is ''
